@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>착한가격업소 - 로그인</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script lang="JavaScript" src="js/loginCheck.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="/content/main.html">착한가격업소</a>
+    </div>
+    <div id="container">
+        <form action="login.do" method="post" name="login" id="contents">
+            <input type="text" id="login_text" placeholder="아이디" name="id">
+            <input type="password" id="login_text" placeholder="비밀번호" name="pw">
+            <input type="button" value="로그인" id="login_button" onclick="loginCheck()">
+        </form>
+    </div>
+    <div id="sign">
+        <form>
+            <input type="button" value="아이디찾기" onclick="idFind()">
+            <input type="button" value="비밀번호찾기" onclick="pwFind()">
+            <input type="button" value="회원가입" onclick="signUp()">
+        </form>
+    </div>
+    <div id="footer">
+        <!-- 소개 -->
+        <div id="bottomMenu">
+            <ul>
+                <li><a href="#">개발자 소개1</a></li>
+                <span></span>
+                <li><a href="#">개발자 소개2</a></li>
+                <span></span>
+                <li><a href="#">개발자 소개3</a></li>
+            </ul>
+        </div>
+        <!-- 주소 -->
+        <div id="company">
+            (04104)서울 마포구 신촌로 176(대흥동 12-20) 중앙정보처리학원
+        </div>
+    </div>
+</body>
+
+</html>
